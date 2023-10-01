@@ -18,17 +18,17 @@ public class Interfaz extends JFrame {
             // Crea un nuevo botón con el texto "Sede"
         JButton Sede1 = new JButton("Sede 1");
         JButton Sede2 = new JButton("Sede 2");
-        JButton Sede3 = new JButton("Sede 3");
+        
 
         // Establece la ubicación y el tamaño del botón
         Sede1.setBounds(77, 750, 174, 68); // Cambia estos valores según tus necesidades
         Sede2.setBounds(351, 750, 174, 68);
-        Sede3.setBounds(625, 750, 174, 68);
+        
         
         // Agrega el botón a la ventana
         add(Sede1);
         add(Sede2);
-        add(Sede3);
+       
  
    
     }
