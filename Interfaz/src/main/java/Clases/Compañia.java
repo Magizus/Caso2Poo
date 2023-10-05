@@ -8,17 +8,16 @@ public class Compañia {
     private int capacidad;
     private List<Object> ObjetosCreados;
     private int PersonasHoy;
-    private int PrecioporKG;
+   
 
-    public Compañia(String nombre, int capacidad, int PersonasHoy, int PrecioporKG) {
+    public Compañia(String nombre, int capacidad, int PersonasHoy) {
         this.nombre = nombre;
         this.capacidad = capacidad;
         this.PersonasHoy = PersonasHoy;
-        this.PrecioporKG = PrecioporKG;
         this.ObjetosCreados = new ArrayList<>();
     }
 
-    // Métodos getters y setters para nombre, capacidad, PersonasHoy y PrecioporKG
+    // Métodos getters y setters para nombre, capacidad, PersonasHoy
     public String getNombre() {
         return nombre;
     }
@@ -43,15 +42,7 @@ public class Compañia {
         this.PersonasHoy = PersonasHoy;
     }
 
-    public int getPrecioporKG() {
-        return PrecioporKG;
-    }
 
-    public void setPrecioporKG(int PrecioporKG) {
-        this.PrecioporKG = PrecioporKG;
-    }
-
-   
     public void escogerSede() {
         
         //falta esto

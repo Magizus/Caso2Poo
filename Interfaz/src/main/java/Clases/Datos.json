@@ -1,0 +1,45 @@
+{
+    "CapacidadSede": {
+        "minCapacidad": 80,
+        "maxCapacidad": 100
+    },
+    "PersonaCapacidad": {
+        "minCapacidad": 1,
+        "maxCapacidad": 5
+    },
+    "Cola": {
+        "colaPersonas": []
+    },
+    "horario": {
+        "horaInicio": "9:00 AM",
+        "horaNoAceptarMas": "5:45 PM",
+        "horaFin": "6:00 PM"
+    },
+    "tiempoAtencion": {
+        "minimoTiempo": 15,
+        "maximoTiempo": 225
+    },
+    "tiempoReciclado": {
+        "minimoTiempo": 25,
+        "maximoTiempo": 150
+    },
+    "tiposMaterial": ["celulares", "televisor"],
+    "materialesReciclados": {
+        "cables": {
+            "minimo": 3,
+            "maximo": 6,
+            "cantidad": 0
+        },
+        "metal": {
+            "minimo": 2,
+            "maximo": 5,
+            "cantidad": 0
+        },
+        "plastico": {
+            "minimo": 1,
+            "maximo": 4,
+            "cantidad": 0
+        }
+    },
+    "listaMaterialesReciclados": []
+}
