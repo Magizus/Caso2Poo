@@ -22,10 +22,4 @@ public class Persona {
         this.capacidad = capacidad;
     }
 
-    // Resto de los métodos getters y setters...
-
-    @Override
-    public String toString() {
-        return "Persona{" + "TipoR=" + TipoR + ", capacidad=" + capacidad + '}';
-    }
 }

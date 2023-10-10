@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 public class Interfaz extends JFrame {
 
     public void MenuPrincipal() {
-        setTitle("Menu inicial");
+        setTitle("Menu");
         setSize(900, 900);//ancho,alto
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

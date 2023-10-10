@@ -1,29 +1,37 @@
 
 package Clases;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Compañia {
-    private String nombre;
+    private String Tipo;
     private int capacidad;
-    private List<Object> ObjetosCreados;
-    private int PersonasHoy;
+    private int Treciclado;
    
 
-    public Compañia(String nombre, int capacidad, int PersonasHoy) {
-        this.nombre = nombre;
+    public Compañia(String nombre, int capacidad) {
+        this.Tipo = nombre;
         this.capacidad = capacidad;
-        this.PersonasHoy = PersonasHoy;
-        this.ObjetosCreados = new ArrayList<>();
+        
     }
 
-    // Métodos getters y setters para nombre, capacidad, PersonasHoy
-    public String getNombre() {
-        return nombre;
+    public Compañia() {
+    // Constructor sin parámetros
+}
+    
+    // Métodos getters y setters para nombre y capacidad
+    public String getTipo() {
+        return Tipo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setTipo(String Tipo) {
+        this.Tipo = Tipo;
+    }
+
+    public int getTreciclado() {
+        return Treciclado;
+    }
+
+    public void setTreciclado(int Treciclado) {
+        this.Treciclado = Treciclado;
     }
 
     public int getCapacidad() {
@@ -34,17 +42,6 @@ public class Compañia {
         this.capacidad = capacidad;
     }
 
-    public int getPersonasHoy() {
-        return PersonasHoy;
-    }
+    
 
-    public void setPersonasHoy(int PersonasHoy) {
-        this.PersonasHoy = PersonasHoy;
-    }
-
-
-    public void escogerSede() {
-        
-        //falta esto
-    }
 }

@@ -1,11 +1,11 @@
 {
     "CapacidadSede": {
-        "minCapacidad": 80,
-        "maxCapacidad": 100
+        "minCapacidadS": 80,
+        "maxCapacidadS": 100
     },
     "PersonaCapacidad": {
-        "minCapacidad": 1,
-        "maxCapacidad": 5
+        "minCapacidadP": 3,
+        "maxCapacidadP": 8
     },
     "Cola": {
         "colaPersonas": []
@@ -27,18 +27,18 @@
     "materialesReciclados": {
         "cables": {
             "minimo": 3,
-            "maximo": 6,
-            "cantidad": 0
+            "maximo": 6
+            
         },
         "metal": {
             "minimo": 2,
-            "maximo": 5,
-            "cantidad": 0
+            "maximo": 5
+            
         },
         "plastico": {
             "minimo": 1,
-            "maximo": 4,
-            "cantidad": 0
+            "maximo": 4
+            
         }
     },
     "listaMaterialesReciclados": []
