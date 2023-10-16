@@ -38,8 +38,7 @@ public class MenuSede extends JFrame {
         volverButton.setBounds(50, 450, 150, 68);
         panel.add(volverButton);
 
-        // Botón "Comprar" entre "Volver" e "Ingresar"
-
+      
 
         add(panel);
 

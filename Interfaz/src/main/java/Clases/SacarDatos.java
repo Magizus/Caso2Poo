@@ -40,7 +40,7 @@ public class SacarDatos {
         maxTiempoReciclado = tiempoRecicladoNode.get("maximoTiempo").asInt();
     }
     
-    private static Persona generarPersonaAleatoria() {
+    private static Persona generarPersona() {
         // Genera al azar un número índice para la lista
         int index = new Random().nextInt(tiposMaterial.length);
         
@@ -89,6 +89,10 @@ public class SacarDatos {
         // Generar las dos compañías (sedes)
         Compañia compañia1 = generarCompañia(1); 
         Compañia compañia2 = generarCompañia(2); 
+        Persona persona1 = generarPersona();
+       
+        System.out.println("Material de persona"+persona1.getTipoR());
+        System.out.println("Cantidad de kg que lleva : " +persona1.getCapacidad());
 
         // Imprimir la información de las compañías
         System.out.println("Compañía 1:");

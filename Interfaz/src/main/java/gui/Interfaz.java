@@ -1,40 +1,36 @@
 package gui;
 
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
 
 public class Interfaz extends JFrame {
-
-    public void MenuPrincipal() {
+    public Interfaz() {
         setTitle("Menu");
-        setSize(900, 900);//ancho,alto
+        setSize(600, 500);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Centrar la ventana en la pantalla
+        setLocationRelativeTo(null);
         setVisible(true);
         
-            // Crea un nuevo botón con el texto "Sede"
         JButton Sede1 = new JButton("Sede 1");
         JButton Sede2 = new JButton("Sede 2");
-        
 
-        // Establece la ubicación y el tamaño del botón
-        Sede1.setBounds(77, 750, 174, 68); // Cambia estos valores según tus necesidades
-        Sede2.setBounds(351, 750, 174, 68);
-        
-        
-        // Agrega el botón a la ventana
+        Sede1.setBounds(77, 350, 174, 68);
+        Sede2.setBounds(351, 350, 174, 68);
+
         add(Sede1);
         add(Sede2);
-       
- 
-   
+
+        // Agregar ActionListener al botón "Sede 1"
+        Sede1.addActionListener(e -> {
+            MenuSede sede1 = new MenuSede();
+            sede1.setTitle("Sede 1");
+            sede1.setVisible(true);
+        });
     }
 
     public static void main(String[] args) {
         Interfaz miVentana = new Interfaz();
-        miVentana.MenuPrincipal();
     }
 }
